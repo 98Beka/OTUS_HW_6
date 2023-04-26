@@ -69,7 +69,7 @@ public class FileSearcher {
             try {
                 var fileNames = Directory.GetFiles(path);
                 foreach (var name in fileNames)
-                    Found?.Invoke(this, new FileArgs() { Name = name});
+                    Found?.Invoke(this, new FileArgs() { Name = name });
 
                 var dir = Directory.GetDirectories(path);
                 foreach (var d in dir)
